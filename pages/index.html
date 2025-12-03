@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design Concepts</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+    </script>
+
+</head>
+<body class="elegant-theme">
+    <div class="site-logo">
+         <a href="/" class="logo">
+             
+                <img src="../assets/images/logo3.png">
+        </a>
+    </div>
+    
+    <nav class="main-nav">
+         <div class="nav-left-placeholder"></div>
+
+        <div class="nav-middle">
+            <a href="index.html">HOME</a>
+            <a href="index.html#spaces">SPACES</a>
+            <a href="index.html#about-us-section" class="nav-link">ABOUT</a>
+            <a href="index.html#contact" class="contact-btn">CONTACT</a>
+        </div>
+
+         <div class="nav-search">
+            <input type="text" id="searchInput" placeholder="Search..." />
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+            <button id="darkModeToggle" class="dark-toggle"><i class="fas fa-moon"></i></button>
+        </div>
+       
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>INTERIOR DESIGN CONCEPTS</h1>
+        </div>
+    </header>
+
+    <section id="spaces" class="spaces-section">
+        <h2>Explore My Spaces</h2>
+        <div class="space-categories">
+            <a href="bedroom.html" class="space-card bedroom">
+                <img src="../assets/images/bedroom.jpg" alt="Bedroom">
+                <div class="card-overlay">
+                    <h3>Bedroom</h3>
+                    <span class="view-more">View Collection →</span>
+                </div>
+            </a>
+            <a href="living-room.html" class="space-card living-room">
+                <img src="../assets/images/living.jpg" alt="Living Room ">
+                <div class="card-overlay">
+                    <h3>Living Room</h3>
+                    <span class="view-more">View Collection →</span>
+                </div>
+            </a>
+            <a href="kitchen.html" class="space-card kitchen">
+                <img src="../assets/images/kitchen.jpg" alt="Kitchen">
+                <div class="card-overlay">
+                    <h3>Kitchen</h3>
+                    <span class="view-more">View Collection →</span>
+                </div>
+            </a>
+             <a href="bathroom.html" class="space-card bathroom">
+                <img src="../assets/images/bathroom.jpg" alt="Bathroom">
+                <div class="card-overlay">
+                    <h3>Bathroom</h3>
+                    <span class="view-more">View Collection →</span>
+                </div>
+            </a>
+             <a href="garden.html" class="space-card garden">
+                <img src="../assets/images/garden.jpg" alt="Garden">
+                <div class="card-overlay">
+                    <h3>Garden</h3>
+                    <span class="view-more">View Collection →</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="about-us-section" class="about-us-section">
+    
+    <div class="about-content">
+        <h2>About </h2>
+        <p>Hi, I'm Sorana, a student driven by a deep passion for creating spaces that don't just look spectacular, but genuinely feel like home. My focus is entirely on reflecting my clients' unique personalities and needs.</p>
+        <p>My mission is to transform your vision into reality, combining fresh ideas and inspiration with a strong commitment to execution. I believe that thoughtful design is more than just aesthetics – it's about elevating your quality of life.</p>
+    </div>
+
+    <div class="ba-gallery-wrapper">
+    <h3 class="gallery-title">Before and After</h3>
+
+    <div class="ba-all-images-row">
+        
+        <div class="ba-pair">
+            <div class="image-container before">
+                <img src="../assets/images/before1.jpeg" alt="Bucatarie inainte" class="ba-img">
+                <span class="label before-label">BEFORE</span>
+            </div>
+            <div class="image-container after">
+                <img src="../assets/images/after1.jpeg" alt="Bucatarie dupa" class="ba-img">
+                <span class="label after-label">AFTER</span>
+            </div>
+        </div>
+
+        <div class="ba-pair">
+            <div class="image-container before">
+                <img src="../assets/images/before2.jpeg" alt="Dormitor inainte" class="ba-img">
+                <span class="label before-label">BEFORE</span>
+            </div>
+            <div class="image-container after">
+                <img src="../assets/images/after2.jpeg" alt="Dormitor dupa" class="ba-img">
+                <span class="label after-label">AFTER</span>
+            </div>
+        </div>
+        
+    </div>
+
+     </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+
+        <form id="contactForm" novalidate>
+            <div class="form-group">
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone*</label>
+                <input type="tel" id="phone" name="phone" required pattern="^\+?[0-9\s\-]{7,15}$" placeholder="+1234567890">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message*</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit">Send Message</button>
+                <p id="formFeedback" class="form-feedback"></p>
+            </div>
+        </form>
+    </section>
+
+
+    <footer class="elegant-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>SB.Designs</h3>
+            </div>
+            <div class="footer-links">
+                <div class="social-links">
+                    <p>Social-links:</p>
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i> Facebook </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i> Instagram </a>
+                    <a href="#" aria-label="Pinterest">
+                        <i class="fab fa-pinterest-p"></i> Pinterest </a>
+                </div>
+                <p class="copyright">&copy; 2025 SB.DESIGN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="help-button" class="floating-btn" aria-label="Help and Support">
+        <i class="fas fa-question-circle"></i> 
+    </button>
+
+    <div id="help-widget">
+        <h3>Need Help?</h3>
+        <p>Get in Touch with Our Team</p>
+        <ul>
+            <li><a href="index.html">Contact Support</a></li>
+        </ul>
+    </div>
+
+    <button id="scroll-to-top" class="floating-btn scroll-top-btn" aria-label="Scroll to top">
+         <i class="fas fa-arrow-up"></i>
+    </button> 
+
+    <button id="scroll-to-bottom" class="floating-btn scroll-down-btn" aria-label="Scroll to bottom">
+         <i class="fas fa-arrow-down"></i>
+    </button>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/animations.js"></script>
+</body>
+</html>
