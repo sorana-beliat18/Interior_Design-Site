@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "title": "Modern Bedroom Design",
+      "description": "A sleek and modern approach to bedroom interiors, focusing on minimalism and comfort.",
+      "image": "assets/images/Imagini_utile/modern-bedroom.jpg"
+    },
+    {
+      "title": "Cozy Kitchen Renovation",
+      "description": "Transforming a traditional kitchen into a cozy and functional space with modern amenities.",
+      "image": "assets/images/Imagini_utile/cozy-kitchen.jpg"
+    },
+    {
+      "title": "Elegant Bathroom Makeover",
+      "description": "An elegant bathroom design that combines luxury with practicality.",
+      "image": "assets/images/Imagini_utile/elegant-bathroom.jpg"
+    },
+    {
+      "title": "Stylish Living Room",
+      "description": "A stylish living room that balances aesthetics and comfort, perfect for entertaining guests.",
+      "image": "assets/images/Imagini_utile/stylish-living-room.jpg"
+    },
+    {
+      "title": "Before and After: Bedroom",
+      "description": "A dramatic transformation of a bedroom space, showcasing the before and after.",
+      "image": "assets/images/Imagini_utile/bedroom-before-after.jpg"
+    },
+    {
+      "title": "Functional Kitchen Design",
+      "description": "A kitchen design that maximizes space and functionality while maintaining a modern look.",
+      "image": "assets/images/Imagini_utile/functional-kitchen.jpg"
+    },
+    {
+      "title": "Spa-like Bathroom Retreat",
+      "description": "Creating a spa-like atmosphere in the bathroom with soothing colors and textures.",
+      "image": "assets/images/Imagini_utile/spa-bathroom.jpg"
+    },
+    {
+      "title": "Contemporary Living Room",
+      "description": "A contemporary living room design that incorporates bold colors and unique furniture.",
+      "image": "assets/images/Imagini_utile/contemporary-living-room.jpg"
+    }
+  ]
+}

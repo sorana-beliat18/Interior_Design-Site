@@ -1,0 +1,39 @@
+{
+  "name": "contact",
+  "fields": [
+    {
+      "label": "Name",
+      "type": "text",
+      "required": true,
+      "validation": {
+        "minLength": 2,
+        "maxLength": 50
+      }
+    },
+    {
+      "label": "Email",
+      "type": "email",
+      "required": true,
+      "validation": {
+        "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+      }
+    },
+    {
+      "label": "Phone Number",
+      "type": "tel",
+      "required": false,
+      "validation": {
+        "pattern": "^\\+?[0-9]{7,15}$"
+      }
+    },
+    {
+      "label": "Message",
+      "type": "textarea",
+      "required": true,
+      "validation": {
+        "minLength": 10,
+        "maxLength": 500
+      }
+    }
+  ]
+}
