@@ -1,0 +1,141 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header, .footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar a.active {
+    background-color: #575757;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.gallery-table th, .gallery-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.help-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.help-widget button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+
+    .gallery-table {
+        font-size: 14px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px;
+    }
+    .video-content h2 {
+    font-size: 1.8rem;
+    }
+    .video-box {
+    max-width: 100%;
+     }
+    .main-nav {
+        flex-direction: column; 
+        height: auto; 
+        padding-bottom: 15px; 
+    }
+
+    .nav-middle {
+        flex-direction: column; 
+        gap: 10px;
+        width: 100%; 
+    }
+    
+    .nav-search {
+        width: 100%; 
+        justify-content: space-around; 
+        margin-top: 15px;
+    }
+    
+    .nav-search input {
+        width: 60%; 
+    }
+
+    .nav-left-placeholder {
+        display: none; 
+    }
+
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        padding: 10px;
+    }
+
+    .help-widget button {
+        padding: 8px;
+    }
+}

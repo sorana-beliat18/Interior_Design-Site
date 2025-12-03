@@ -1,0 +1,201 @@
+
+body.dark-mode {
+    background-color: #6b6161; 
+    color: #28201F; 
+}
+
+body.dark-mode a {
+    color: #8d4464;
+}
+
+body.dark-mode a:hover {
+    color: #b35980; 
+}
+
+/*Navigation Bar*/
+body.dark-mode .main-nav {
+    background-color: #3B1A27; 
+}
+
+body.dark-mode .nav-middle a {
+    color: #28201F; 
+}
+body.dark-mode .nav-middle a:hover {
+    color: #8d4464; 
+}
+body.dark-mode .nav-middle a.active {
+    background-color: #591b35; /
+}
+
+body.dark-mode .nav-search input {
+    background: #433b3b; 
+    border-color: #5a5a5a;
+}
+body.dark-mode .nav-search button {
+    background: #4b323f; 
+    color: #28201F;
+}
+
+body.dark-mode .nav-right a {
+    color: black; 
+}
+
+body.dark-mode .nav-right a:hover {
+    color: #b35980; 
+}
+
+body.dark-mode .contact-btn {
+    color: #28201F !important; 
+    background-color: #4b323f; 
+}
+
+body.dark-mode .contact-btn:hover {
+    background-color: #591b35;
+}
+/*Home Page*/
+body.dark-mode .hero-content h1 {
+    color: #28201F;
+    text-shadow: none; 
+}
+
+body.dark-mode #spaces,
+body.dark-mode #image-gallery,
+body.dark-mode #tiles-gallery,
+body.dark-mode #bathroom-carousel,
+body.dark-mode .living-section,
+body.dark-mode .video-section {
+    background-color: #614B47;
+}
+
+body.dark-mode #spaces h2,
+body.dark-mode #image-gallery h2,
+body.dark-mode #tiles-gallery h2,
+body.dark-mode #bathroom-carousel h2,
+body.dark-mode .living-section h2 {
+    color: #28201F;
+}
+
+body.dark-mode .button,
+body.dark-mode .floating-btn,
+body.dark-mode .scroll-top-btn,
+body.dark-mode .scroll-down-btn {
+    background-color: #3d0b25;
+    color: #28201F;
+}
+
+body.dark-mode #help-widget {
+    background-color: #433737; 
+}
+body.dark-mode #help-widget h3 {
+    color: #28201F;
+}
+body.dark-mode #help-widget li a {
+    color: #320a0c; 
+}
+
+body.dark-mode .table th {
+    background-color: #3d0b25;
+    color: #28201F;
+}
+body.dark-mode .table th, 
+body.dark-mode .table td {
+    border: 1px solid #5a5a5a;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .main-nav a{
+    text-shadow: 
+        0 0 5px rgba(241, 240, 239, 0.5), 
+        0 0 10px #ebe9e44d; 
+}
+
+body.dark-mode .hero-content h1 {
+    text-shadow: 
+        0 0 8px #ddd6ca,
+        0 0 15px #d5d0c6; 
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    text-shadow: none !important;
+}
+
+body.dark-mode p,
+body.dark-mode .copyright {
+    text-shadow: none !important;
+}
+/*About Us Section*/
+body.dark-mode .about-us-section {
+    background-color: #6b6161; 
+}
+
+body.dark-mode .about-content h2,
+body.dark-mode .about-content p,
+body.dark-mode .gallery-title {
+    color: #28201F;
+}
+
+body.dark-mode .image-container {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); 
+}
+
+body.dark-mode .gallery-title {
+    text-shadow: 
+         0 0 5px rgba(211, 195, 151, 0.5), 
+         0 0 10px #c4b2874d; 
+}
+
+/*Contact Section*/
+body.dark-mode #contact {
+    background-color: #574444; 
+}
+
+body.dark-mode #contact h2,
+body.dark-mode #contact p {
+    color: #28201F; 
+}
+
+body.dark-mode #contact input, 
+body.dark-mode #contact textarea {
+    background-color: #483c3c; 
+    color: #28201F; 
+    border: 1px solid #391a1a; 
+}
+
+body.dark-mode #contact button {
+    background-color: #4b323f; 
+    color: #28201F;
+}
+body.dark-mode #contact button:hover {
+    background-color: #591b35;
+}
+
+/*Footer*/
+body.dark-mode .elegant-footer { 
+    background-color: #8E7177;
+    color: #28201F;
+}
+
+body.dark-mode .footer-brand h3,
+body.dark-mode .footer-brand p,
+body.dark-mode .copyright {
+    color: #28201F; 
+}
+
+body.dark-mode .social-links {
+    background-color: #614B47;
+}
+body.dark-mode .social-links p,
+body.dark-mode .social-links a,
+body.dark-mode .social-links a i {
+    color: #591b35!important; 
+}
+body.dark-mode .social-links a:hover {
+    color: #28201F !important;
+}
+
+
+
+
