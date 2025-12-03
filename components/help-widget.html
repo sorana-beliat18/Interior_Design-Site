@@ -1,0 +1,82 @@
+<div class="help-widget">
+    <button id="help-button" onclick="toggleHelp()">Help</button>
+    <div id="help-content" class="help-content" style="display: none;">
+        <h3>Need Assistance?</h3>
+        <p>If you have any questions or need assistance with our interior design ideas, feel free to check our FAQs or contact us directly.</p>
+        <ul>
+            <li><strong>FAQs:</strong></li>
+            <li>How do I submit my design ideas?</li>
+            <li>What services do you offer?</li>
+            <li>Can I get a consultation?</li>
+        </ul>
+        <button onclick="closeHelp()">Close</button>
+    </div>
+</div>
+
+<script>
+    function toggleHelp() {
+        const helpContent = document.getElementById('help-content');
+        if (helpContent.style.display === 'none') {
+            helpContent.style.display = 'block';
+        } else {
+            helpContent.style.display = 'none';
+        }
+    }
+
+    function closeHelp() {
+        document.getElementById('help-content').style.display = 'none';
+    }
+</script>
+
+<style>
+    .help-widget {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    #help-button {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #help-button:hover {
+        background-color: #0056b3;
+    }
+
+    .help-content {
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 15px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 250px;
+    }
+
+    .help-content h3 {
+        margin-top: 0;
+    }
+
+    .help-content ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .help-content button {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .help-content button:hover {
+        background-color: #c82333;
+    }
+</style>
