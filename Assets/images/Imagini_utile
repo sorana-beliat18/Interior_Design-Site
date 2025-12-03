@@ -1,0 +1,17 @@
+The contents of the file /interior-design-website/interior-design-website/src/assets/images/Imagini_utile will be the images you want to include in your project. Since I cannot access the actual images from your "Imagini utile" folder, I will provide a structure for how you can organize your images within that folder. You can replace the placeholders with your actual image files.
+
+Here is the suggested structure for the images folder:
+
+- image1.jpg
+- image2.jpg
+- image3.jpg
+- image4.jpg
+- image5.jpg
+- before_after1.jpg
+- before_after2.jpg
+- bedroom_design1.jpg
+- kitchen_design1.jpg
+- bathroom_design1.jpg
+- living_room_design1.jpg
+
+You can add your actual image files with appropriate names in the /src/assets/images/Imagini_utile directory.
