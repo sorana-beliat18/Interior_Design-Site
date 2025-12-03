@@ -458,23 +458,23 @@ body.dark-mode .space-card {
 }
 
 .space-card.bedroom {
-    background-image: url('../assets/images/bedroom.jpg');
+    background-image: url('assets/images/bedroom.jpg');
 }
 
 .space-card.living-room {
-    background-image: url('../assets/images/living.jpg');
+    background-image: url('assets/images/living.jpg');
 }
 
 .space-card.kitchen {
-    background-image: url('../assets/images/kitchen.jpg');
+    background-image: url('assets/images/kitchen.jpg');
 }
 
 .space-card.bathroom {
-    background-image: url('../assets/images/bathroom.jpg');
+    background-image: url('assets/images/bathroom.jpg');
 }
 
 .space-card.garden {
-    background-image: url('../assets/images/garden.jpg');
+    background-image: url('assets/images/garden.jpg');
 }
 
 .section-grid {
