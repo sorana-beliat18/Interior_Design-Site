@@ -188,8 +188,6 @@ if (scrollToTopButton && scrollToBottomButton) {
         const totalHeight = document.body.scrollHeight;
         window.scrollTo({ top: totalHeight, behavior: 'smooth' });
     });
-
-   l
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) {  
             scrollToTopButton.classList.add('visible');
