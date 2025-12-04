@@ -1,4 +1,4 @@
-// JavaScript code for managing the image carousel functionality
+// This script is managing the image carousel functionality
 document.addEventListener("DOMContentLoaded", function() {
   const track = document.querySelector(".carousel-track");
   const slides = Array.from(track.children);
@@ -33,6 +33,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // Redimensionare: recalculează pozițiile
   window.addEventListener("resize", updateCarousel);
 });

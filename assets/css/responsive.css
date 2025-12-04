@@ -1,141 +1,169 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+
+@media (max-width: 1200px) {
+  .ba-all-images-row {
+    gap: 20px;
+  }
+
+  .ba-pair {
+    width: 48%;
+  }
+
+  .image-container {
+    height: 300px;
+  }
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+@media (max-width: 1024px) {
+  .carousel-track img {
+    width: calc(100% / 2);
+    height: 450px;
+  }
 }
 
-.header, .footer {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
-}
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-    padding: 10px 0;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-}
-
-.navbar a.active {
-    background-color: #575757;
-}
-
-.carousel {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel img {
-    width: 100%;
-    height: auto;
-}
-
-.gallery-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.gallery-table th, .gallery-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-.contact-form {
-    display: flex;
+@media (max-width: 992px) {
+  .ba-all-images-row {
     flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .ba-pair {
+    width: 90%;
+    max-width: 700px;
+  }
+
+  .image-container {
+    height: 250px;
+  }
 }
 
-.contact-form input, .contact-form textarea {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.help-widget {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-
-.help-widget button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-}
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-    }
+  .navbar,
+  nav,
+  .main-nav {
+    flex-direction: column;
+  }
 
-    .carousel {
-        flex-direction: column;
-    }
+  .main-nav {
+    height: auto;
+    padding-bottom: 15px;
+  }
 
-    .gallery-table {
-        font-size: 14px;
-    }
+  .nav-middle {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
 
-    .contact-form input, .contact-form textarea {
-        font-size: 14px;
-    }
-    .video-content h2 {
+  .nav-search {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+
+  .nav-search input {
+    width: 60%;
+  }
+
+  .nav-left-placeholder {
+    display: none;
+  }
+
+  .carousel {
+    flex-direction: column;
+  }
+
+  .carousel img {
+    height: auto;
+  }
+
+  .carousel-track img {
+    width: calc(100% / 2);
+    height: 450px;
+  }
+
+  .gallery-table {
+    font-size: 14px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .video-content h2 {
     font-size: 1.8rem;
-    }
-    .video-box {
+  }
+
+  .video-box {
     max-width: 100%;
-     }
-    .main-nav {
-        flex-direction: column; 
-        height: auto; 
-        padding-bottom: 15px; 
-    }
+  }
 
-    .nav-middle {
-        flex-direction: column; 
-        gap: 10px;
-        width: 100%; 
-    }
-    
-    .nav-search {
-        width: 100%; 
-        justify-content: space-around; 
-        margin-top: 15px;
-    }
-    
-    .nav-search input {
-        width: 60%; 
-    }
+  .image-grid,
+  .image-grid2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
 
-    .nav-left-placeholder {
-        display: none; 
-    }
+  .image-grid img {
+    height: 250px;
+  }
 
+  .image-grid2 img {
+    height: 400px;
+  }
+
+  .hero-content .subtitle {
+    font-size: 1rem;
+  }
+
+  .ba-img {
+    height: 250px;
+  }
+
+  .label {
+    font-size: 0.9em;
+    padding: 4px 10px;
+  }
+
+  .gallery-item,
+  .gallery-item.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gallery-img img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .gallery-text {
+    margin-top: 20px;
+  }
+
+  .tile-grid img {
+    height: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-track img {
+    width: 100%;
+    height: 400px;
+  }
 }
 
 @media (max-width: 480px) {
-    .navbar a {
-        padding: 10px;
-    }
+  .navbar a {
+    padding: 10px;
+  }
 
-    .help-widget button {
-        padding: 8px;
-    }
+  .help-widget button {
+    padding: 8px;
+  }
+
+  .image-grid,
+  .image-grid2 {
+    grid-template-columns: 1fr;
+  }
 }

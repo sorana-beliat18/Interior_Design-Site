@@ -1,6 +1,5 @@
-// main.js
 
-// Functionality for the navigation bar highlighting the active page
+//NavBar Active Link
 const navLinks = document.querySelectorAll('.nav-link');
 const currentLocation = window.location.pathname;
 
@@ -10,24 +9,24 @@ navLinks.forEach(link => {
     }
 });
 
-// Functionality for the search feature
+//Search 
 const searchInput = document.getElementById('searchInput');
 const searchButton = document.getElementById('searchBtn');
 
 function eliminaDiacritice(text) {
     return text
         .toLowerCase()
-        .normalize("NFD")           // separă diacriticele
-        .replace(/[\u0300-\u036f]/g, ""); // elimină diacriticele
+        .normalize("NFD")         
+        .replace(/[\u0300-\u036f]/g, ""); 
 }
 
-let highlightedSpans = []; // reținem toate span-urile evidențiate
+let highlightedSpans = []; 
 
 function clearHighlights() {
     highlightedSpans.forEach(span => {
         const parent = span.parentNode;
         parent.replaceChild(document.createTextNode(span.textContent), span);
-        parent.normalize(); // combină nodurile text adiacente
+        parent.normalize(); 
     });
     highlightedSpans = [];
 }
@@ -36,7 +35,6 @@ searchButton.addEventListener('click', () => {
     const query = eliminaDiacritice(searchInput.value.trim());
     if (!query) return;
 
-    // Curățăm highlight-urile anterioare
     clearHighlights();
 
    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
@@ -49,7 +47,6 @@ searchButton.addEventListener('click', () => {
         }
     }
 
-    // Evidențiem fiecare apariție din fiecare nod
     nodesToHighlight.forEach(node => {
         let currentNode = node;
         let normalizedText = eliminaDiacritice(currentNode.textContent);
@@ -57,7 +54,7 @@ searchButton.addEventListener('click', () => {
 
         while (matchIndex !== -1) {
             const span = document.createElement('span');
-            span.style.backgroundColor = "yellow";
+            span.style.backgroundColor = "green";
 
             const originalText = currentNode.textContent;
             const before = originalText.slice(0, matchIndex);
@@ -96,27 +93,27 @@ document.addEventListener('click', (e) => {
     }
   });    
 
-// Formular contact
+//Contact
 const contactForm = document.getElementById('contactForm');
 const formFeedback = document.getElementById('formFeedback');
 
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
-        e.preventDefault(); // prevenim trimiterea tradițională
+        e.preventDefault(); 
 
         const name = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
         const phone = document.getElementById('phone').value.trim();
         const message = document.getElementById('message').value.trim();
 
-        // Validare simplă
+        // Field validation
         if (!name || !email || !phone || !message) {
             formFeedback.textContent = "Please fill in all required fields.";
             formFeedback.style.color = "red";
             return;
         }
 
-        // Validare email
+        //Email validation
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email)) {
             formFeedback.textContent = "Please enter a valid email address.";
@@ -124,7 +121,7 @@ if (contactForm) {
             return;
         }
 
-        // Validare telefon
+        //Phone validation
         const phonePattern = /^\+?[0-9\s\-]{7,15}$/;
         if (!phonePattern.test(phone)) {
             formFeedback.textContent = "Please enter a valid phone number.";
@@ -132,16 +129,14 @@ if (contactForm) {
             return;
         }
 
-        // Dacă totul e valid
+        //All valid
         formFeedback.textContent = "Thank you! Your message has been sent.";
         formFeedback.style.color = "green";
-
-        // Aici poți adăuga trimiterea reală prin fetch / AJAX
         contactForm.reset();
     });
 }
 
-// Functionality for the help widget
+//Help widget
 const helpButton = document.getElementById('help-button');
 const helpWidget = document.getElementById('help-widget');
 
@@ -151,9 +146,8 @@ helpButton.addEventListener('click', () => {
 
 
 
-/// DARK MODE
+//Dark Mode
 const darkModeToggle = document.getElementById("darkModeToggle");
-// Selectează elementul <i> care conține pictograma (Lună/Soare)
 const themeIcon = darkModeToggle ? darkModeToggle.querySelector('.fas') : null; 
 
 function applyTheme(theme) {
@@ -166,7 +160,6 @@ function applyTheme(theme) {
     localStorage.setItem("theme", theme);
 }
 
-// 1. Load saved theme and initialize icon on page load
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme) {
      applyTheme(savedTheme);
@@ -174,67 +167,46 @@ if (savedTheme) {
      applyTheme("light"); 
 }
 
-// 2. Toggle on click
 darkModeToggle.addEventListener("click", () => {
     const currentTheme = document.body.classList.contains("dark-mode") ? "dark" : "light";
     const newTheme = currentTheme === "dark" ? "light" : "dark";
     applyTheme(newTheme);
 });
-// ... restul codului main.js
 
-// Scroll to top/bottom functionality
-
+// Scroll to Top and Bottom Buttons
 const scrollToTopButton = document.getElementById('scroll-to-top');
 const scrollToBottomButton = document.getElementById('scroll-to-bottom');
 if (scrollToTopButton && scrollToBottomButton) {
 
-    // 1. Logica de click (Scroll la Top)
+    
     scrollToTopButton.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // 2. Logica de click (Scroll la Bottom)
+  
     scrollToBottomButton.addEventListener('click', () => {
         const totalHeight = document.body.scrollHeight;
         window.scrollTo({ top: totalHeight, behavior: 'smooth' });
     });
 
-    // 3. Logica de afișare/ascundere la scroll
+   l
     window.addEventListener('scroll', () => {
-        
-        // --- Butonul UP (Scroll to Top) ---
-        if (window.scrollY > 300) { 
-            // Apare când derulezi în jos
+        if (window.scrollY > 300) {  
             scrollToTopButton.classList.add('visible');
         } else {
-            // Dispare când ești sus
             scrollToTopButton.classList.remove('visible');
         }
-
-        // --- Butonul DOWN (Scroll to Bottom) ---
-        // Verifică dacă utilizatorul este aproape de baza paginii
         const isAtBottom = (window.innerHeight + window.scrollY) >= (document.body.scrollHeight - 50);
-
         if (isAtBottom) {
-            // Ascunde butonul de Down când ești jos
             scrollToBottomButton.classList.remove('visible'); 
         } else {
-            // Afișează butonul de Down
             scrollToBottomButton.classList.add('visible'); 
         }
     });
 
 }
 
-// Initialize Google Analytics
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'YOUR_TRACKING_ID', 'auto');
-ga('send', 'pageview');
-// === Modal Zoom Gallery ===
+//Modal Zoom Gallery
 document.addEventListener("DOMContentLoaded", function() {
   const modal = document.getElementById("image-modal");
   const modalImg = document.getElementById("modal-img");
@@ -257,15 +229,11 @@ document.addEventListener("DOMContentLoaded", function() {
       modal.style.display = "none";
     }
   };
-  // === Modal Zoom pentru Kitchen Tiles ===
 document.addEventListener("DOMContentLoaded", function() {
   const modal = document.getElementById("image-modal");
   const modalImg = document.getElementById("modal-img");
   const closeBtn = document.querySelector(".close");
-
-  // Selectează TOATE imaginile din .tile-grid (secțiunea de kitchen)
   const tileImages = document.querySelectorAll(".tile-grid img");
-
   tileImages.forEach(img => {
     img.addEventListener("click", function() {
       modal.style.display = "flex";
