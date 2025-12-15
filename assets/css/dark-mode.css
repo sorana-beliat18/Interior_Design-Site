@@ -26,11 +26,11 @@ body.dark-mode .nav-right a:hover {
 }
 
 body.dark-mode .nav-search input {
-    background: #433b3b; 
+    background: #50584B; 
     border-color: #5a5a5a;
 }
 body.dark-mode .nav-search button {
-    background: #4b323f; 
+    background: #50584B; 
     color: #D4BAB5;
 }
 
@@ -48,11 +48,19 @@ body.dark-mode .contact-btn:hover {
 }
 
 body.dark-mode .nav-link.active {
-    background-color: #B1594E;
+    background-color: #50584B;
     color: #ffffff !important;
     padding: 8px 16px;
     border-radius: 20px;
 }
+body.dark-mode .dark-toggle {
+    color: #50584B;     
+}
+
+body.dark-mode .dark-toggle:hover {
+    color: #50584B;
+}
+
 
 /*Home Page*/
 body.dark-mode .hero-content h1 {
@@ -81,18 +89,18 @@ body.dark-mode .button,
 body.dark-mode .floating-btn,
 body.dark-mode .scroll-top-btn,
 body.dark-mode .scroll-down-btn {
-    background-color: #433432;
+    background-color: #50584B;
     color: #D4BAB5;
 }
 
 body.dark-mode #help-widget {
-    background-color: #433737; 
+    background-color: #50584B; 
 }
 body.dark-mode #help-widget h3 {
     color: #D4BAB5;
 }
 body.dark-mode #help-widget li a {
-    color: #433432; 
+    color: #50584B; 
 }
 
 body.dark-mode .table th {
@@ -128,6 +136,32 @@ body.dark-mode p,
 body.dark-mode .copyright {
     text-shadow: none !important;
 }
+body.dark-mode .floating-btn {
+    background-color: #50584B;
+    color: #D4BAB5;
+}
+
+body.dark-mode .floating-btn:hover {
+    background-color: #50584B;
+    color: #fff;
+}
+
+body.dark-mode #help-widget {
+    background-color: #50584B; 
+    color: #D4BAB5;
+}
+
+body.dark-mode #help-widget h3 {
+    color: #D4BAB5;
+}
+
+body.dark-mode #help-widget li a {
+    color: #D4BAB5;
+}
+body.dark-mode #help-widget li a:hover {
+    color: #50584B;
+}
+
 /*About Us Section*/
 body.dark-mode .about-us-section {
     background-color: #453734; 
@@ -161,9 +195,9 @@ body.dark-mode #contact p {
 
 body.dark-mode #contact input, 
 body.dark-mode #contact textarea {
-    background-color: #574444; 
+    background-color: #433432; 
     color: #D4BAB5; 
-    border: 1px solid #574444; 
+    border: 1px solid #433432; 
 }
 
 body.dark-mode #contact button {
