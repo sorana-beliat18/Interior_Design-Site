@@ -20,7 +20,8 @@ body.dark-mode .main-nav {
 body.dark-mode .nav-middle a {
     color: #D4BAB5; 
 }
-body.dark-mode .nav-middle a:hover {
+body.dark-mode .nav-middle a:hover,
+body.dark-mode .nav-right a:hover {
     color: #592C27; 
 }
 body.dark-mode .nav-middle a.active {
@@ -38,10 +39,6 @@ body.dark-mode .nav-search button {
 
 body.dark-mode .nav-right a {
     color: black; 
-}
-
-body.dark-mode .nav-right a:hover {
-    color: #b35980; 
 }
 
 body.dark-mode .contact-btn {
@@ -128,7 +125,7 @@ body.dark-mode .copyright {
 }
 /*About Us Section*/
 body.dark-mode .about-us-section {
-    background-color: #5C3E36; 
+    background-color: #453734; 
 }
 
 body.dark-mode .about-content h2,
@@ -174,7 +171,7 @@ body.dark-mode #contact button:hover {
 
 /*Footer*/
 body.dark-mode .elegant-footer { 
-    background-color: #592C27;
+    background-color: #433432;
     color: #D4BAB5;
 }
 
