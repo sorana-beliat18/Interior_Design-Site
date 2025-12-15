@@ -5,7 +5,7 @@ body.dark-mode {
 }
 
 body.dark-mode a {
-    color: #8d4464;
+    color: #824139;
 }
 
 body.dark-mode a:hover {
@@ -21,10 +21,10 @@ body.dark-mode .nav-middle a {
     color: #D4BAB5; 
 }
 body.dark-mode .nav-middle a:hover {
-    color: #8d4464; 
+    color: #824139; 
 }
 body.dark-mode .nav-middle a.active {
-    background-color: #591b35; /
+    background-color: #B1594E; /
 }
 
 body.dark-mode .nav-search input {
@@ -50,7 +50,7 @@ body.dark-mode .contact-btn {
 }
 
 body.dark-mode .contact-btn:hover {
-    background-color: #591b35;
+    background-color: #B1594E;
 }
 /*Home Page*/
 body.dark-mode .hero-content h1 {
@@ -169,7 +169,7 @@ body.dark-mode #contact button {
     color: #D4BAB5;
 }
 body.dark-mode #contact button:hover {
-    background-color: #591b35;
+    background-color: #B1594E;
 }
 
 /*Footer*/
@@ -190,7 +190,7 @@ body.dark-mode .social-links {
 body.dark-mode .social-links p,
 body.dark-mode .social-links a,
 body.dark-mode .social-links a i {
-    color: #591b35!important; 
+    color: #B1594E!important; 
 }
 body.dark-mode .social-links a:hover {
     color: #D4BAB5 !important;
