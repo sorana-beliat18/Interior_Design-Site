@@ -9,7 +9,7 @@ body.dark-mode a {
 }
 
 body.dark-mode a:hover {
-    color: #b35980; 
+    color: #333830; 
 }
 
 /*Navigation Bar*/
@@ -22,7 +22,7 @@ body.dark-mode .nav-middle a {
 }
 body.dark-mode .nav-middle a:hover,
 body.dark-mode .nav-right a:hover {
-    color: #433432; 
+    color: #50584B; 
 }
 
 body.dark-mode .nav-search input {
@@ -40,11 +40,11 @@ body.dark-mode .nav-right a {
 
 body.dark-mode .contact-btn {
     color: #D4BAB5 !important; 
-    background-color: #4b323f; 
+    background-color: #333830; 
 }
 
 body.dark-mode .contact-btn:hover {
-    background-color: #B1594E;
+    background-color: #50584B;
 }
 
 body.dark-mode .nav-link.active {
@@ -161,17 +161,17 @@ body.dark-mode #contact p {
 
 body.dark-mode #contact input, 
 body.dark-mode #contact textarea {
-    background-color: #483c3c; 
+    background-color: #574444; 
     color: #D4BAB5; 
-    border: 1px solid #391a1a; 
+    border: 1px solid #574444; 
 }
 
 body.dark-mode #contact button {
-    background-color: #4b323f; 
+    background-color: #333830; 
     color: #D4BAB5;
 }
 body.dark-mode #contact button:hover {
-    background-color: #B1594E;
+    background-color: #363c32;
 }
 
 /*Footer*/
