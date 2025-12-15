@@ -14,7 +14,7 @@ body.dark-mode a:hover {
 
 /*Navigation Bar*/
 body.dark-mode .main-nav {
-    background-color: #3B1A27; 
+    background-color: #824139; 
 }
 
 body.dark-mode .nav-middle a {
@@ -79,7 +79,7 @@ body.dark-mode .button,
 body.dark-mode .floating-btn,
 body.dark-mode .scroll-top-btn,
 body.dark-mode .scroll-down-btn {
-    background-color: #3d0b25;
+    background-color: #824139;
     color: #D4BAB5;
 }
 
@@ -90,11 +90,11 @@ body.dark-mode #help-widget h3 {
     color: #D4BAB5;
 }
 body.dark-mode #help-widget li a {
-    color: #320a0c; 
+    color: #824139; 
 }
 
 body.dark-mode .table th {
-    background-color: #3d0b25;
+    background-color: #824139;
     color: #D4BAB5;
 }
 body.dark-mode .table th, 
@@ -128,7 +128,7 @@ body.dark-mode .copyright {
 }
 /*About Us Section*/
 body.dark-mode .about-us-section {
-    background-color: #6b6161; 
+    background-color: #713932; 
 }
 
 body.dark-mode .about-content h2,
@@ -174,7 +174,7 @@ body.dark-mode #contact button:hover {
 
 /*Footer*/
 body.dark-mode .elegant-footer { 
-    background-color: #8E7177;
+    background-color: #321916;
     color: #D4BAB5;
 }
 
@@ -185,12 +185,12 @@ body.dark-mode .copyright {
 }
 
 body.dark-mode .social-links {
-    background-color: #614B47;
+    background-color: #824139;
 }
 body.dark-mode .social-links p,
 body.dark-mode .social-links a,
 body.dark-mode .social-links a i {
-    color: #B1594E!important; 
+    color: #D4BAB5!important; 
 }
 body.dark-mode .social-links a:hover {
     color: #D4BAB5 !important;
