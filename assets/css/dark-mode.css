@@ -24,7 +24,7 @@ body.dark-mode .nav-middle a:hover {
     color: #824139; 
 }
 body.dark-mode .nav-middle a.active {
-    background-color: #B1594E; /
+    background-color: #B1594E; 
 }
 
 body.dark-mode .nav-search input {
@@ -174,7 +174,7 @@ body.dark-mode #contact button:hover {
 
 /*Footer*/
 body.dark-mode .elegant-footer { 
-    background-color: #321916;
+    background-color: #824139;
     color: #D4BAB5;
 }
 
@@ -185,7 +185,7 @@ body.dark-mode .copyright {
 }
 
 body.dark-mode .social-links {
-    background-color: #824139;
+    background-color: #D4BAB5;
 }
 body.dark-mode .social-links p,
 body.dark-mode .social-links a,
