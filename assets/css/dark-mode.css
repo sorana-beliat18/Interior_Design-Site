@@ -5,7 +5,7 @@ body.dark-mode {
 }
 
 body.dark-mode a {
-    color: #592C27;
+    color: #433432;
 }
 
 body.dark-mode a:hover {
@@ -14,7 +14,7 @@ body.dark-mode a:hover {
 
 /*Navigation Bar*/
 body.dark-mode .main-nav {
-    background-color: #592C27; 
+    background-color: #433432; 
 }
 
 body.dark-mode .nav-middle a {
@@ -22,10 +22,7 @@ body.dark-mode .nav-middle a {
 }
 body.dark-mode .nav-middle a:hover,
 body.dark-mode .nav-right a:hover {
-    color: #592C27; 
-}
-body.dark-mode .nav-middle a.active {
-    background-color: #B1594E; 
+    color: #433432; 
 }
 
 body.dark-mode .nav-search input {
@@ -38,7 +35,7 @@ body.dark-mode .nav-search button {
 }
 
 body.dark-mode .nav-right a {
-    color: black; 
+    color:#D4BAB5; 
 }
 
 body.dark-mode .contact-btn {
@@ -49,6 +46,14 @@ body.dark-mode .contact-btn {
 body.dark-mode .contact-btn:hover {
     background-color: #B1594E;
 }
+
+body.dark-mode .nav-link.active {
+    background-color: #B1594E;
+    color: #ffffff !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
 /*Home Page*/
 body.dark-mode .hero-content h1 {
     color: #d3c2b7;
@@ -76,7 +81,7 @@ body.dark-mode .button,
 body.dark-mode .floating-btn,
 body.dark-mode .scroll-top-btn,
 body.dark-mode .scroll-down-btn {
-    background-color: #592C27;
+    background-color: #433432;
     color: #D4BAB5;
 }
 
@@ -87,11 +92,11 @@ body.dark-mode #help-widget h3 {
     color: #D4BAB5;
 }
 body.dark-mode #help-widget li a {
-    color: #592C27; 
+    color: #433432; 
 }
 
 body.dark-mode .table th {
-    background-color: #592C27;
+    background-color: #433432;
     color: #D4BAB5;
 }
 body.dark-mode .table th, 
@@ -182,7 +187,7 @@ body.dark-mode .copyright {
 }
 
 body.dark-mode .social-links {
-    background-color: #D4BAB5;
+    background-color: #574444;
 }
 body.dark-mode .social-links p,
 body.dark-mode .social-links a,

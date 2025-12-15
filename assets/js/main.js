@@ -1,11 +1,16 @@
 
 //NavBar Active Link
 const navLinks = document.querySelectorAll('.nav-link');
-const currentLocation = window.location.pathname;
+const currentPage = window.location.pathname.split("/").pop();
 
 navLinks.forEach(link => {
-    if (link.href.includes(currentLocation)) {
-        link.classList.add('active');
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage || 
+       (currentPage === "" && linkPage === "index.html")) {
+        link.classList.add("active");
+    } else {
+        link.classList.remove("active");
     }
 });
 
